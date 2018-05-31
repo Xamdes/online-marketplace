@@ -1,26 +1,39 @@
-function getValue(idName)
-{
-  return $(idName).val();
-}
+$(function() {
+  $("#btn-submit").click(function()
+  {
+    var userName = "";
+    var address1 = "";
+    var address2 = "";
+    var city = "";
+    var state = ""
+    var zipcode = "";
+    var outputAddress1 = "";
+    var outputAddress2 = "";
+    var outputAddress3 = "";
+    var outputAddress4 = "";
 
-function setText(idName,value)
-{
-  $(idName).text(value);
-}
+    userName = $("#fullName").val();
+    address1 = $("#address1").val();
+    address2 = $("#address2").val();
+    city = $("#city").val();
+    state = $("#state").val();
+    zipcode = $("#zipcode").val();
 
-function showResponse()
-{
-  $(purchase-response).show();
-  $(purchase-receeipt).show();
-}
+    outputAddress1 = userName;
+    outputAddress2 = address1;
+    outputAddress3 = address2;
+    outputAddress4 = city.concat(", ",state," ",zipcode);
 
-$(function(){
-  var userName = "#fullName";
-  var address1 = "#address1";
-  var address2 = "#address2";
-  var cityState = "#address3";
-  var zipcode = "#zipcode";
+    $(".userName").text(userName);
 
-  getValue();
+    $("#receipt-address1").text(outputAddress1);
+    $("#receipt-address2").text(outputAddress2);
+    $("#receipt-address3").text(outputAddress3);
+    $("#receipt-address4").text(outputAddress4);
 
+    $("#purchase-response").show();
+    $("#purchase-receipt").show();
+
+    event.preventDefault();
+  });
 });

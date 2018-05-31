@@ -23,26 +23,32 @@
         <input id="address2" class="form-control" type="text" >
       </div>
       <div class="row">
-        <div class="form-group col-md-4">
-          <label for="address3">City , State:</label>
-          <input id="address3" class="form-control" type="text" >
+        <div class="form-group col-md-2">
+          <label for="city">City:</label>
+          <input id="city" class="form-control" type="text" >
+        </div>
+        <div class="form-group col-md-2">
+          <label for="state">State:</label>
+          <input id="state" class="form-control" type="text" >
         </div>
         <div class="form-group col-md-4">
           <label for="zipcode">Zipcode:</label>
           <input id="zipcode" class="form-control" type="text" >
         </div>
       </div>
-      <button id="btn-sumbit" class="btn btn-dark">Submit!</button>
+      <button id="btn-submit" class="btn btn-dark">Submit!</button>
     </form>
     <div id="purchase-response" class="initial-hide">
-      <p>Thank you <span class="userName"></span> for purchasing (ipsum).</p>
+      <h3>Thank you <span class="userName"></span> for purchasing (ipsum).</h3>
     </div>
     <div id="purchase-receipt" class="initial-hide">
-      Your order will be shipped to:
-      <span class="receipt-address1"></span>
-      <span class="receipt-address2"></span>
-      <span class="receipt-address3"></span>
-      <span class="receipt-address4"></span>
+      <h2>Your order will be shipped to:</h2>
+      <div class="well">
+        <div id="receipt-address1"></div>
+        <div id="receipt-address2"></div>
+        <div id="receipt-address3"></div>
+        <div id="receipt-address4"></div>
+      </div>
     </div>
   </body>
 </html>
