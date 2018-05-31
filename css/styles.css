@@ -10,3 +10,12 @@ body {
 .center-text {
   text-align: center;
 }
+
+.initial-hide {
+  display: none;
+}
+
+.btn-dark {
+  background-color: grey;
+  color: white;
+}

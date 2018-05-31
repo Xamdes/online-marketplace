@@ -9,6 +9,40 @@
     <title>Survey</title>
   </head>
   <body class="container-fluid">
-    
+    <form id="inputForm" class="well background-blue">
+      <div class="form-group">
+        <label for="fullName">Name:</label>
+        <input id="fullName" class="form-control" type="text" >
+      </div>
+      <div class="form-group">
+        <label for="address1">Address Line 1:</label>
+        <input id="address1" class="form-control" type="text" >
+      </div>
+      <div class="form-group">
+        <label for="address2">Address Line 2: (Optional)</label>
+        <input id="address2" class="form-control" type="text" >
+      </div>
+      <div class="row">
+        <div class="form-group col-md-4">
+          <label for="address3">City , State:</label>
+          <input id="address3" class="form-control" type="text" >
+        </div>
+        <div class="form-group col-md-4">
+          <label for="zipcode">Zipcode:</label>
+          <input id="zipcode" class="form-control" type="text" >
+        </div>
+      </div>
+      <button id="btn-sumbit" class="btn btn-dark">Submit!</button>
+    </form>
+    <div id="purchase-response" class="initial-hide">
+      <p>Thank you <span class="userName"></span> for purchasing (ipsum).</p>
+    </div>
+    <div id="purchase-receipt" class="initial-hide">
+      Your order will be shipped to:
+      <span class="receipt-address1"></span>
+      <span class="receipt-address2"></span>
+      <span class="receipt-address3"></span>
+      <span class="receipt-address4"></span>
+    </div>
   </body>
 </html>
