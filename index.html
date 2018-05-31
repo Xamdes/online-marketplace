@@ -9,6 +9,8 @@
     <title>Survey</title>
   </head>
   <body class="container-fluid">
+    <h1 class="jumbotron background-image">Online marketing</h1>
+
     <form id="inputForm" class="well background-blue">
       <div class="form-group">
         <label for="fullName">Name:</label>
@@ -38,12 +40,17 @@
       </div>
       <button id="btn-submit" class="btn btn-dark">Submit!</button>
     </form>
-    <div id="purchase-response" class="initial-hide">
-      <h3>Thank you <span class="userName"></span> for purchasing (ipsum).</h3>
+    <div id="purchase-response" class="initial-hide well background-blue">
+      <h3>Thank you <span class="userName"></span> for ordering:</h3>
+      <p>
+        <ul>
+          <li>Dishwashing Soap</li>
+        </ul>
+      </p>
     </div>
     <div id="purchase-receipt" class="initial-hide">
       <h2>Your order will be shipped to:</h2>
-      <div class="well">
+      <div class="well purchase-order">
         <div id="receipt-address1"></div>
         <div id="receipt-address2"></div>
         <div id="receipt-address3"></div>
